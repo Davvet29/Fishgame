@@ -7,6 +7,10 @@ TagManager:
   - Item
   - Win
   - Lose
+  - Circle
+  - Triangle
+  - Square
+  - Star
   layers:
   - Default
   - TransparentFX
