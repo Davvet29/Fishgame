@@ -7,16 +7,37 @@ public class GameManager : MonoBehaviour
     public int lives;
 
     public List<Minigame> minigames;
+
+    public VoicePlayer player;
+
+    float timeToWait;
+
+    enum GameState
+    {
+
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+    
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (timeToWait != 0)
+        {
+            timeToWait -= Time.deltaTime;
+
+            if (timeToWait < 0)
+            {
+                timeToWait = 0;
+                NextGame();
+            }
+        }
     }
 
     public void OnGameEnd(bool won)
@@ -26,23 +47,27 @@ public class GameManager : MonoBehaviour
             lives--;
             if (lives == 0)
             {
-                GameOver();
+                HandleGameEnd(VoicePlayer.AudioClips.GAMEOVER);
                 return;
             }
 
-            HandleGameEnd();
+            HandleGameEnd(VoicePlayer.AudioClips.LOSECLIP);
         }
         else
         {
-            HandleGameEnd();
+            HandleGameEnd(VoicePlayer.AudioClips.WINCLIP);
         }
     }
 
-    void HandleGameEnd()
+    void HandleGameEnd(VoicePlayer.AudioClips clip)
     {
-        //Do cutscene etc
-
-        NextGame();
+        if (clip == VoicePlayer.AudioClips.GAMEOVER)
+        {
+            player.PlayAudio(clip);
+            //Do gameover logic
+            return;
+        }
+        timeToWait = player.PlayAudio(clip);
     }
 
     void NextGame()

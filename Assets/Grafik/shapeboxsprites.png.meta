@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: a72c4a216c4ab234fb50939a3b46a170
+guid: e29d7312d93fcba40979683e800ff56d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7021815480850694429
-    second: armsprites_0
+      213: 4211781768734335301
+    second: shapeboxsprites_0
   - first:
-      213: 8889331371150820397
-    second: armsprites_1
+      213: -5770203774572263650
+    second: shapeboxsprites_1
   - first:
-      213: 5532785136040500249
-    second: armsprites_2
-  - first:
-      213: -4479850291067820352
-    second: armsprites_3
-  - first:
-      213: -5479474064195752503
-    second: armsprites_4
+      213: 1411414300453041284
+    second: shapeboxsprites_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,13 +106,57 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: armsprites_0
+      name: shapeboxsprites_0
       rect:
         serializedVersion: 2
-        x: 59
+        x: 0
+        y: 388
+        width: 1920
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54160e42431437a30800000000000000
+      internalID: 4211781768734335301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapeboxsprites_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 1920
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1780072d3e1cefa0800000000000000
+      internalID: -5770203774572263650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapeboxsprites_2
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 1016
-        height: 2338
+        width: 1920
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d11c1760aff727160800000000000000
-      internalID: 7021815480850694429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: armsprites_1
-      rect:
-        serializedVersion: 2
-        x: 1147
-        y: 2139
-        width: 401
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d244e2cc8cf3d5b70800000000000000
-      internalID: 8889331371150820397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: armsprites_2
-      rect:
-        serializedVersion: 2
-        x: 1147
-        y: 1636
-        width: 401
-        height: 430
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91c514c64c668cc40800000000000000
-      internalID: 5532785136040500249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: armsprites_3
-      rect:
-        serializedVersion: 2
-        x: 1160
-        y: 872
-        width: 388
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c6e8f145ef54d1c0800000000000000
-      internalID: -4479850291067820352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: armsprites_4
-      rect:
-        serializedVersion: 2
-        x: 1207
-        y: 535
-        width: 341
-        height: 395
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cd65afbe5ff4f3b0800000000000000
-      internalID: -5479474064195752503
+      spriteID: 484f86904d9569310800000000000000
+      internalID: 1411414300453041284
       vertices: []
       indices: 
       edges: []
@@ -235,11 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      armsprites_0: 7021815480850694429
-      armsprites_1: 8889331371150820397
-      armsprites_2: 5532785136040500249
-      armsprites_3: -4479850291067820352
-      armsprites_4: -5479474064195752503
+      shapeboxsprites_0: 4211781768734335301
+      shapeboxsprites_1: -5770203774572263650
+      shapeboxsprites_2: 1411414300453041284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
