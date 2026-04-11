@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/DrawTheLine.unity
     guid: 8b4b425dc3720df45bc6d0a79c94a387
+  - enabled: 1
+    path: Assets/Scenes/Minigames/SweatWipe.unity
+    guid: e661c228fc07fa8469683def4076aa75
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
