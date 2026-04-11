@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -40,12 +41,9 @@ public class ArmMovementScript : MonoBehaviour
     {
         mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
-        // newMousePos = Input.mousePosition;
-        // mouseDelta =  newMousePos - oldMousePos;
         Mathf.Clamp(mouseDelta.x, -10, 10);
         Mathf.Clamp(mouseDelta.y, -10, 10);
-        // oldMousePos = newMousePos;
-        Debug.Log(mouseDelta);
+
         return mouseDelta * 10;
     }
 

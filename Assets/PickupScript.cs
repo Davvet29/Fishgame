@@ -1,17 +1,32 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PickupScript : MonoBehaviour
 {
     InputAction leftClick;
-    InputAction rightClick;
 
     GameObject item = null;
     bool itemGrabbed;
 
+    SpriteRenderer sr;
+
+    [SerializeField]
+    Sprite normalHand;
+
+    [SerializeField]
+    Sprite openGrabHand;
+
+    [SerializeField]
+    Sprite closedGrabHand;
+
+    bool horizontalArm = false;
+
     void Start()
     {
         leftClick = InputSystem.actions.FindAction("Attack");
+        sr = GameObject.Find("Hand").GetComponent<SpriteRenderer>();
+        MakeHorizontal(true);
     }
 
     // Update is called once per frame
@@ -19,13 +34,16 @@ public class PickupScript : MonoBehaviour
     {
         if (leftClick.IsPressed())
         {
-            Debug.Log("isClicking");
             itemGrabbed = true;
             if (item != null)
             {
                 OnPickup();
             }
 
+            if (horizontalArm)
+            {
+                sr.sprite = closedGrabHand;
+            }
         }
         else
         {
@@ -34,12 +52,21 @@ public class PickupScript : MonoBehaviour
                 OnLetGo();
             }
             itemGrabbed = false;
+
+            if (horizontalArm)
+            {
+                sr.sprite = openGrabHand;
+            }
         }
         if (itemGrabbed)
         {
             if (item != null)
             {
                 item.transform.position = transform.position;
+                if (horizontalArm)
+                {
+                    item.transform.position += new Vector3(1, -1, 0);
+                }
             }
         }
     }
@@ -74,6 +101,23 @@ public class PickupScript : MonoBehaviour
         if (item.TryGetComponent(out Rigidbody2D rb))
         {
             rb.gravityScale = 1;
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
+
+    public void MakeHorizontal(bool rotate)
+    {
+        if (rotate)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 65);
+            sr.sprite = openGrabHand;
+            horizontalArm = true;
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 30);
+            sr.sprite = normalHand;
+            horizontalArm = false;
         }
     }
 }
