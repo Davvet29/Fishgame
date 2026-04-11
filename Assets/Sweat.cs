@@ -6,6 +6,8 @@ public class Sweat : MonoBehaviour
     float distanceTraveled;
 
     public SpriteRenderer sweatSprite;
+
+    public bool sweatWiped;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +17,12 @@ public class Sweat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sweatSprite.color = new Vector4(sweatSprite.color.r, sweatSprite.color.b, sweatSprite.color.g, (distanceToTravel - distanceTraveled) / 10);
+        sweatSprite.color = new Vector4(sweatSprite.color.r, sweatSprite.color.g, sweatSprite.color.b, (distanceToTravel - distanceTraveled) / 10);
+
+        if (distanceToTravel - distanceTraveled <= 0)
+        {
+            sweatWiped = true;
+        }
     }
 
     Vector3 lastPosition;

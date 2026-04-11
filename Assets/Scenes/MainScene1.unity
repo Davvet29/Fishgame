@@ -929,9 +929,10 @@ MonoBehaviour:
   - "BlockIH\xE5let"
   - Electricity
   - SimonSays
+  - SweatWipe
   minigameScripts: []
   player: {fileID: 1421675523}
-  timeMultiplier: 2
+  timeMultiplier: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
