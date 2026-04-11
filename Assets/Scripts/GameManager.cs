@@ -23,10 +23,14 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    
+        
+        HandleGameEnd(VoicePlayer.AudioClips.INTRO);
+
+        DontDestroyOnLoad(gameObject);
     }
 
-    
+
+
 
     // Update is called once per frame
     void Update()
@@ -77,10 +81,7 @@ public class GameManager : MonoBehaviour
     {
         int selectedGame = Random.Range(0, minigames.Count); //i think its right;
 
-        SceneManager.LoadScene(minigames[selectedGame], LoadSceneMode.Additive);
-
-        GameObject.Find(minigames[selectedGame]).GetComponent<Minigame>().gameManager = this;
-        GameObject.Find(minigames[selectedGame]).GetComponent<Minigame>().timeMultiplier = this.timeMultiplier;
+        SceneManager.LoadScene(minigames[selectedGame]);
 
 
 

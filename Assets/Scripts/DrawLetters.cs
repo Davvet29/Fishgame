@@ -11,15 +11,16 @@ public class DrawLetters : Minigame
     public GameObject pen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
-        
+        base.Start();
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
         CheckCondition();
+        base.Update();
     }
 
     protected override void CheckCondition()
