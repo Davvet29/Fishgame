@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
 
     bool gameOver;
 
+    bool playingStartClip = true;
+
+    public GameObject musicPlayer;
+
     enum GameState { }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,6 +49,12 @@ public class GameManager : MonoBehaviour
             if (timeToWait < 0)
             {
                 timeToWait = 0;
+                if (playingStartClip == true)
+                {
+                    GameObject go = Instantiate(musicPlayer);
+                    DontDestroyOnLoad(go);
+                }
+                playingStartClip = false;
                 NextGame();
             }
         }

@@ -1117,6 +1117,7 @@ MonoBehaviour:
   minigameScripts: []
   player: {fileID: 1421675523}
   timeMultiplier: 1
+  musicPlayer: {fileID: 4951045743062935206, guid: 0c0603491b92f794da8f17f2dff06367, type: 3}
 --- !u!1 &1741581213
 GameObject:
   m_ObjectHideFlags: 0
