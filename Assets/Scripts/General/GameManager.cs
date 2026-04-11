@@ -19,22 +19,15 @@ public class GameManager : MonoBehaviour
 
     bool gameOver;
 
-    enum GameState
-    {
-
-    }
+    enum GameState { }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
         HandleGameEnd(VoicePlayer.AudioClips.INTRO);
 
         DontDestroyOnLoad(gameObject);
     }
-
-
-
 
     // Update is called once per frame
     void Update()
@@ -45,7 +38,7 @@ public class GameManager : MonoBehaviour
 
             if (gameOver && timeToWait < 0)
             {
-                SceneManager.LoadScene("Creditscene");
+                SceneManager.LoadScene("Creditsscene");
             }
             if (timeToWait < 0)
             {
@@ -87,24 +80,16 @@ public class GameManager : MonoBehaviour
     }
 
     int lastGameNum;
+
     void NextGame()
     {
         int selectedGame = 1000;
-        while (selectedGame == lastGameNum ||selectedGame == 1000)
+        while (selectedGame == lastGameNum || selectedGame == 1000)
         {
             selectedGame = Random.Range(0, minigames.Count); //i think its right;
         }
 
-
         SceneManager.LoadScene(minigames[selectedGame]);
         lastGameNum = selectedGame;
-
-
-
-    }
-
-    void GameOver()
-    {
-        SceneManager.LoadScene("GameOverScene");
     }
 }
