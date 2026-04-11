@@ -29,12 +29,11 @@ public class PickupScript : MonoBehaviour
         }
         else
         {
-            itemGrabbed = false;
-            
-            if (item != null)
+            if (item != null && itemGrabbed == true)
             {
                 OnLetGo();
             }
+            itemGrabbed = false;
         }
         if (itemGrabbed)
         {

@@ -4,9 +4,7 @@ using UnityEngine;
 public class DrawLetters : Minigame
 {
     public float pointConfirmDistance;
-    public float winPercent;
-
-    public 
+    public float winPercent; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
