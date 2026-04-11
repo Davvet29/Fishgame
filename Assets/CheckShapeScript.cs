@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CheckShapeScript : MonoBehaviour
 {
+
     [SerializeField]
     string shapeName;
     GameManager gameManager;
+    HålGameManagerScript HGMS;
 
     void Start()
     {
@@ -15,11 +18,11 @@ public class CheckShapeScript : MonoBehaviour
     {
         if (collision.tag == "Item" && collision.name == shapeName)
         {
-            gameManager.OnGameEnd(true);
+            HGMS.gameOver(true);
         }
         if (collision.tag == "Item" && collision.name != shapeName)
         {
-            gameManager.OnGameEnd(false);
+            HGMS.gameOver(false);
         }
     }
 }

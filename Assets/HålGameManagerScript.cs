@@ -1,21 +1,20 @@
 using UnityEngine;
 
-public class HålGameManagerScript : MonoBehaviour
+public class HålGameManagerScript : Minigame
 {
-
-    GameManager gameManager;
     PickupScript pickupScript;
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        pickupScript = GameObject.Find("TipPoint    ").GetComponent<PickupScript>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        pickupScript = GameObject.Find("TipPoint").GetComponent<PickupScript>();
         pickupScript.MakeHorizontal(true);
     }
+
+    public void gameOver(bool won)
+    {
+        gameManager.OnGameEnd(won);
+    }
+
+    public HålGameManagerScript(float timeMultiplier, GameManager gameManager)
+        : base(timeMultiplier, gameManager) { }
 }
