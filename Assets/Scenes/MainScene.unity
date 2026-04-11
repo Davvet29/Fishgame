@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6bdd47f4e11bb41a971baf8a1b8e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introClip: {fileID: 0}
+  introClip: {fileID: 8300000, guid: 3384dee84aa64c849ba6baee629c467c, type: 3}
   gameOverClip: {fileID: 0}
   winClips: []
   loseClips: []

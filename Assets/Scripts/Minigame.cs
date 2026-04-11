@@ -7,12 +7,12 @@ public class Minigame : MonoBehaviour
     public string sceneName;
     protected bool gameWon;
 
-    protected float timeMultiplier;
+    public float timeMultiplier;
     private float gameTime;
 
     private float timePassed = 0;
 
-    protected GameManager gameManager; 
+    public GameManager gameManager; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,12 +29,6 @@ public class Minigame : MonoBehaviour
             EndGame(gameWon);
             timePassed = 0;
         }
-    }
-
-    public Minigame(float timeMultiplier, GameManager gameManager)
-    {
-        gameTime = timeMultiplier * baseTime;
-        this.gameManager = gameManager;
     }
 
     protected virtual void CheckCondition()
