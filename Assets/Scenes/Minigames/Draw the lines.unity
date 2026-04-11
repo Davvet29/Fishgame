@@ -1033,6 +1033,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1661940982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661940984}
+  - component: {fileID: 1661940983}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1661940983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661940982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1923f2102e604fb489ef3d32b6055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  pointConfirmDistance: 0.1
+  winPercent: 0
+  splineHolders:
+  - {fileID: 1927525603}
+  - {fileID: 497439411}
+  pen: {fileID: 1717463452}
+--- !u!4 &1661940984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661940982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.4985743, y: 0.31218156, z: 0.041094355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1717463452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7275775154543581964, guid: 67c6af36f9114c34c8d9ae80aa7e28cb, type: 3}
+  m_PrefabInstance: {fileID: 1021658998566265182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790444797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1622,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2103266567480036302, guid: 67c6af36f9114c34c8d9ae80aa7e28cb, type: 3}
+      propertyPath: drawInterval
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3687197138178591784, guid: 67c6af36f9114c34c8d9ae80aa7e28cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.067692
@@ -1631,3 +1691,4 @@ SceneRoots:
   - {fileID: 1021658998566265182}
   - {fileID: 2035038687}
   - {fileID: 1284864192}
+  - {fileID: 1661940984}
