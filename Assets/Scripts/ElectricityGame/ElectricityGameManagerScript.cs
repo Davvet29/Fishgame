@@ -21,5 +21,8 @@ public class ElectricityGameManagerScript : Minigame
     {
         Debug.Log("I won? " + won);
         gameWon = won;
+
+        timePassed = 100;
+
     }
 }

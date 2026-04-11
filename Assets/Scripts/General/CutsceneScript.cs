@@ -16,6 +16,7 @@ public class CutsceneScript : MonoBehaviour
     void Update()
     {
         timePassed += Time.deltaTime;
+
         if (timePassed > cutsceneTime)
         {
             SceneManager.LoadScene("MainScene1");

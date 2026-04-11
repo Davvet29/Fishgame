@@ -15,6 +15,7 @@ public class SweatWipe : Minigame
         if (sweat.sweatWiped)
         {
             gameWon = true;
+            timePassed = 100;
         }
     }
 }
