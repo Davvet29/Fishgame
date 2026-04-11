@@ -1171,7 +1171,7 @@ MonoBehaviour:
   timePassed: 0
   gameManager: {fileID: 0}
   pointConfirmDistance: 0.2
-  winPercent: 40
+  winPercent: 60
   splineHolders:
   - {fileID: 437874772}
   pen: {fileID: 1911236778}

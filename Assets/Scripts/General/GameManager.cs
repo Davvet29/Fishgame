@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
             if (gameOver && timeToWait < 0)
             {
                 SceneManager.LoadScene("Creditsscene");
+                return;
             }
             if (timeToWait < 0)
             {
@@ -53,10 +54,9 @@ public class GameManager : MonoBehaviour
         if (!won)
         {
             lives--;
-            if (lives == 0)
+            if (lives <= 0)
             {
                 HandleGameEnd(VoicePlayer.AudioClips.GAMEOVER);
-                return;
             }
 
             HandleGameEnd(VoicePlayer.AudioClips.LOSECLIP);
@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
     {
         if (clip == VoicePlayer.AudioClips.GAMEOVER)
         {
-            player.PlayAudio(clip);
             gameOver = true;
         }
         timeToWait = player.PlayAudio(clip);
