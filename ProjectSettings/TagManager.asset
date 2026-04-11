@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Item
+  - Win
+  - Lose
+  - Circle
+  - Triangle
+  - Square
+  - Star
   layers:
   - Default
   - TransparentFX

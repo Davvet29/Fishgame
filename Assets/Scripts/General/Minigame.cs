@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Minigame : MonoBehaviour
 {
@@ -32,6 +33,9 @@ public class Minigame : MonoBehaviour
             EndGame(gameWon);
             timePassed = 0;
         }
+
+        GameObject.Find("Timer").transform.GetChild(0).GetComponent<Slider>().maxValue = gameTime;
+        GameObject.Find("Timer").transform.GetChild(0).GetComponent<Slider>().value = timePassed;
     }
 
     protected virtual void CheckCondition()

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Minigames/DrawTheLines.unity
+    path: Assets/Scenes/Minigames/SimonSays.unity
     guid: 01e109a12b786364a93d1c47e07ca17b
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
@@ -17,6 +17,24 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Minigames/BlockIH\xE5let.unity"
     guid: cd82377de58879641be1c4d21354ca74
+  - enabled: 1
+    path: Assets/Scenes/Intro Scene.unity
+    guid: ce23b846f4044d74f86758f911b95e2e
+  - enabled: 1
+    path: Assets/Scenes/Mainmenu.unity
+    guid: 00ab01e02fc15984489cc9ec407bb24d
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: d39aa5e16a4b6294b8d579048d3af974
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Electricity.unity
+    guid: b5784e81460cf764c801709404f1c247
+  - enabled: 1
+    path: Assets/Scenes/MainScene1.unity
+    guid: cb5cf604ada504f46bb76682a2955913
+  - enabled: 1
+    path: Assets/Scenes/Minigames/DrawTheLine.unity
+    guid: 8b4b425dc3720df45bc6d0a79c94a387
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
