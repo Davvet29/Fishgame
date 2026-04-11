@@ -21,16 +21,27 @@ public class PickupScript : MonoBehaviour
         {
             Debug.Log("isClicking");
             itemGrabbed = true;
-            OnPickup();
+            if (item != null)
+            {
+                OnPickup();
+            }
+
         }
         else
         {
             itemGrabbed = false;
-            OnLetGo();
+            
+            if (item != null)
+            {
+                OnLetGo();
+            }
         }
         if (itemGrabbed)
         {
-            item.transform.position = transform.position;
+            if (item != null)
+            {
+                item.transform.position = transform.position;
+            }
         }
     }
 
@@ -53,13 +64,20 @@ public class PickupScript : MonoBehaviour
 
     void OnPickup()
     {
-        item.GetComponent<Rigidbody2D>().gravityScale = 0;
+        if (item.TryGetComponent(out Rigidbody2D rb))
+        {
+            rb.gravityScale = 0;
+        }
     }
 
     void OnLetGo()
     {
+        if (item.TryGetComponent(out Rigidbody2D rb))
+        {
+            rb.gravityScale = 1;
+        }
+
         item = null;
-        item.GetComponent<Rigidbody2D>().gravityScale = 1;
 
     }
 }
