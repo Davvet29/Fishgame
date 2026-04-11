@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: e29d7312d93fcba40979683e800ff56d
+guid: 9d96eb89b03440a42b519cb29583b8b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4211781768734335301
-    second: shapeboxsprites_0
-  - first:
-      213: -5770203774572263650
-    second: shapeboxsprites_1
-  - first:
-      213: 1411414300453041284
-    second: shapeboxsprites_2
+      213: -7834394122730460591
+    second: emptypaper_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 104
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,57 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shapeboxsprites_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 388
-        width: 1920
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54160e42431437a30800000000000000
-      internalID: 4211781768734335301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapeboxsprites_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 227
-        width: 1920
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1780072d3e1cefa0800000000000000
-      internalID: -5770203774572263650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapeboxsprites_2
+      name: emptypaper_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 149
+        width: 1098
+        height: 889
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 484f86904d9569310800000000000000
-      internalID: 1411414300453041284
+      spriteID: 15a2e34cd04a64390800000000000000
+      internalID: -7834394122730460591
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shapeboxsprites_0: 4211781768734335301
-      shapeboxsprites_1: -5770203774572263650
-      shapeboxsprites_2: 1411414300453041284
+      emptypaper_0: -7834394122730460591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

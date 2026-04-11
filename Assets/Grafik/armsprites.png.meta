@@ -137,9 +137,9 @@ TextureImporter:
       name: armsprites_1
       rect:
         serializedVersion: 2
-        x: 1194
+        x: 1147
         y: 2139
-        width: 354
+        width: 401
         height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: armsprites_2
       rect:
         serializedVersion: 2
-        x: 1179
-        y: 1641
-        width: 369
-        height: 424
+        x: 1147
+        y: 1636
+        width: 401
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: armsprites_3
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 982
-        width: 216
-        height: 548
+        x: 1160
+        y: 872
+        width: 388
+        height: 662
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
