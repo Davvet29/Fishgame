@@ -3,16 +3,9 @@ using UnityEngine.Events;
 
 public class CheckShapeScript : MonoBehaviour
 {
-
     [SerializeField]
     string shapeName;
-    GameManager gameManager;
     HålGameManagerScript HGMS;
-
-    void Start()
-    {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {

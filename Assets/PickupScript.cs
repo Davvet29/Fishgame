@@ -110,6 +110,7 @@ public class PickupScript : MonoBehaviour
         if (rotate)
         {
             transform.rotation = Quaternion.Euler(0, 0, 65);
+            Debug.Log(sr.sprite);
             sr.sprite = openGrabHand;
             horizontalArm = true;
         }
