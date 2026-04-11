@@ -11,10 +11,7 @@ public class ElectricityGameManagerScript : Minigame
         timeMultiplier = 1;
     }
 
-    void Update()
-    {
-        baseTime = 5766876;
-    }
+    void Update() { }
 
     public void gameOver(bool won)
     {
