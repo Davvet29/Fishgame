@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 1089712664}
   - component: {fileID: 1089712665}
   m_Layer: 0
-  m_Name: ElectricityGameManager
+  m_Name: Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,9 +495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817668067e169024dae275cd9dd61cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTime: 0
+  baseTime: 15
   sceneName: 
-  timeMultiplier: 0
+  timeMultiplier: 1
   gameManager: {fileID: 0}
 --- !u!1 &1167647630
 GameObject:

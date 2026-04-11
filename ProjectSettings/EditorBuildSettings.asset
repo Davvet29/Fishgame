@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: d39aa5e16a4b6294b8d579048d3af974
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Electricity.unity
+    guid: b5784e81460cf764c801709404f1c247
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
