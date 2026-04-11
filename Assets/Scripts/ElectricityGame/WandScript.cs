@@ -8,7 +8,7 @@ public class WandScript : MonoBehaviour
     void Start()
     {
         electricityGameManager = GameObject
-            .Find("ElectricityGameManager")
+            .Find("Electricity")
             .GetComponent<ElectricityGameManagerScript>();
     }
 
