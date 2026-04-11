@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     float timeMultiplierDelta = 0.025f;
 
+    bool gameOver;
+
     enum GameState
     {
 
@@ -41,6 +43,10 @@ public class GameManager : MonoBehaviour
         {
             timeToWait -= Time.deltaTime;
 
+            if (gameOver && timeToWait < 0)
+            {
+                SceneManager.LoadScene("Creditscene");
+            }
             if (timeToWait < 0)
             {
                 timeToWait = 0;
@@ -75,7 +81,7 @@ public class GameManager : MonoBehaviour
         if (clip == VoicePlayer.AudioClips.GAMEOVER)
         {
             player.PlayAudio(clip);
-            return;
+            gameOver = true;
         }
         timeToWait = player.PlayAudio(clip);
     }

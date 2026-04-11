@@ -58,6 +58,7 @@ public class DrawLetters : Minigame
         if (confirmedPoints >= winPercent)
         {
             gameWon = true;
+            timePassed = 100;
         }
     }
 
