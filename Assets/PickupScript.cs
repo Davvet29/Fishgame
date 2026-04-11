@@ -76,8 +76,5 @@ public class PickupScript : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
-
-        item = null;
-
     }
 }
