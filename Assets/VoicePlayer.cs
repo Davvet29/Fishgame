@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class VoicePlayer : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class VoicePlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        source = GetComponent<AudioSource>();
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -52,7 +53,7 @@ public class VoicePlayer : MonoBehaviour
 
         source.Play();
 
-
+        Debug.Log("Played audio" + source.clip.name);
         return source.clip.length;
 
     }

@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Minigame : MonoBehaviour
 {
-    protected float baseTime;
+    public float baseTime;
     public string sceneName;
     protected bool gameWon;
 
@@ -15,13 +16,15 @@ public class Minigame : MonoBehaviour
     public GameManager gameManager; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
-        
+        OnGameStart();
+        gameTime = baseTime * timeMultiplier;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         timePassed += Time.deltaTime;
         if (timePassed > gameTime)
@@ -38,13 +41,12 @@ public class Minigame : MonoBehaviour
 
     void EndGame(bool won)
     {
-        SceneManager.UnloadSceneAsync(sceneName);
         gameManager.OnGameEnd(won);
+        SceneManager.LoadScene("MainScene");
     }
 
     protected virtual void OnGameStart()
     {
-
     }
 
     
