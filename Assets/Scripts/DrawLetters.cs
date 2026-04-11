@@ -22,11 +22,6 @@ public class DrawLetters : Minigame
         CheckCondition();
     }
 
-    public DrawLetters(float timeMultiplier, GameManager gameManager) : base(timeMultiplier, gameManager)
-    {
-        baseTime = 1000;
-    }
-
     protected override void CheckCondition()
     {
         int confirmedPoints = 0;

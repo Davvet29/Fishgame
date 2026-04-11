@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public int lives;
 
-    public List<Minigame> minigames;
+    public List<string> minigames;
+    public List<Minigame> minigameScripts;
 
     public VoicePlayer player;
+
+    public float timeMultiplier;
 
     float timeToWait;
 
@@ -74,7 +77,13 @@ public class GameManager : MonoBehaviour
     {
         int selectedGame = Random.Range(0, minigames.Count); //i think its right;
 
-        SceneManager.LoadScene(minigames[selectedGame].sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(minigames[selectedGame], LoadSceneMode.Additive);
+
+        GameObject.Find(minigames[selectedGame]).GetComponent<Minigame>().gameManager = this;
+        GameObject.Find(minigames[selectedGame]).GetComponent<Minigame>().timeMultiplier = this.timeMultiplier;
+
+
+
 
     }
 
