@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
             if (gameOver && timeToWait < 0)
             {
                 SceneManager.LoadScene("Creditsscene");
+                Destroy(gameObject);
                 return;
             }
             if (timeToWait < 0)
