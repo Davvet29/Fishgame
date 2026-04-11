@@ -15,6 +15,9 @@ public class PickupScript : MonoBehaviour
     Sprite normalHand;
 
     [SerializeField]
+    Sprite closedNormalHand;
+
+    [SerializeField]
     Sprite openGrabHand;
 
     [SerializeField]
@@ -29,7 +32,6 @@ public class PickupScript : MonoBehaviour
         leftClick = InputSystem.actions.FindAction("Attack");
         sr = GameObject.Find("Hand").GetComponent<SpriteRenderer>();
         holdPos = GameObject.Find("HoldingPosition");
-
 
         if (horizontalArm)
         {
@@ -56,6 +58,10 @@ public class PickupScript : MonoBehaviour
             {
                 sr.sprite = closedGrabHand;
             }
+            else
+            {
+                sr.sprite = closedNormalHand;
+            }
         }
         else
         {
@@ -68,6 +74,10 @@ public class PickupScript : MonoBehaviour
             if (horizontalArm)
             {
                 sr.sprite = openGrabHand;
+            }
+            else
+            {
+                sr.sprite = normalHand;
             }
         }
         if (itemGrabbed)
