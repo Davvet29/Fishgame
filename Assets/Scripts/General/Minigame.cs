@@ -22,6 +22,7 @@ public class Minigame : MonoBehaviour
         OnGameStart();
         gameTime = baseTime * timeMultiplier;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        timeMultiplier = gameManager.timeMultiplier;
     }
 
     // Update is called once per frame

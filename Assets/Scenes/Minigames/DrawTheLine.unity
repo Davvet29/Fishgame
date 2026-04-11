@@ -1169,8 +1169,8 @@ MonoBehaviour:
   sceneName: DrawTheLines
   timeMultiplier: 1
   gameManager: {fileID: 0}
-  pointConfirmDistance: 0.1
-  winPercent: 80
+  pointConfirmDistance: 0.2
+  winPercent: 60
   splineHolders:
   - {fileID: 437874772}
   pen: {fileID: 1911236778}

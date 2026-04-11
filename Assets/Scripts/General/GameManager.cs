@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     float timeToWait;
 
+    float timeMultiplierDelta = 0.025f;
+
     enum GameState
     {
 
@@ -64,6 +66,8 @@ public class GameManager : MonoBehaviour
         {
             HandleGameEnd(VoicePlayer.AudioClips.WINCLIP);
         }
+
+        timeMultiplier -= timeMultiplierDelta;
     }
 
     void HandleGameEnd(VoicePlayer.AudioClips clip)
@@ -77,12 +81,18 @@ public class GameManager : MonoBehaviour
         timeToWait = player.PlayAudio(clip);
     }
 
+    int lastGameNum;
     void NextGame()
     {
-        int selectedGame = Random.Range(0, minigames.Count); //i think its right;
+        int selectedGame = 1000;
+        while (selectedGame == lastGameNum ||selectedGame == 1000)
+        {
+            selectedGame = Random.Range(0, minigames.Count); //i think its right;
+        }
+
 
         SceneManager.LoadScene(minigames[selectedGame]);
-
+        lastGameNum = selectedGame;
 
 
 
