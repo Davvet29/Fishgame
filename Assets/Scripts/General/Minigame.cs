@@ -12,7 +12,7 @@ public class Minigame : MonoBehaviour
     public float timeMultiplier;
     private float gameTime;
 
-    private float timePassed = 0;
+    public float timePassed = 0;
 
     public GameManager gameManager; 
 

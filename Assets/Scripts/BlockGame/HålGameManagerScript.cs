@@ -33,6 +33,7 @@ public class HålGameManagerScript : Minigame
     public void gameOver(bool won)
     {
         gameWon = won;
+        timePassed = 100;
     }
 
     public void InstanceShape(int shapeNumber)

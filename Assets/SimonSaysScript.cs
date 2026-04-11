@@ -39,6 +39,8 @@ public class SimonSaysScript : Minigame
     {
         Debug.Log("I won? " + won);
         gameWon = won;
+        timePassed = 100;
+
     }
 
     private void MakeSimonSays(int times)

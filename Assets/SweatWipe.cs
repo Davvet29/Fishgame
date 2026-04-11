@@ -1,16 +1,21 @@
 using UnityEngine;
 
-public class SweatWipe : MonoBehaviour
+public class SweatWipe : Minigame
 {
+    public Sweat sweat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        if (sweat.sweatWiped)
+        {
+            gameWon = true;
+            timePassed = 100;
+        }
     }
 }

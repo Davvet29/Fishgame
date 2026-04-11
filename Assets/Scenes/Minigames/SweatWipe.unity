@@ -196,8 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45ba84062e350145aca07e1cee3451b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToTravel: 10
+  distanceToTravel: 200
   sweatSprite: {fileID: 1126290487}
+  sweatWiped: 0
 --- !u!61 &288143744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -471,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: USE YOUR COGNITIVE ABILITY!
+  m_text: WIPE YOUR SWEAT!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -753,7 +754,7 @@ GameObject:
   - component: {fileID: 886430863}
   - component: {fileID: 886430864}
   m_Layer: 0
-  m_Name: "BlockIH\xE5let"
+  m_Name: SweatWipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,6 +787,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6933e334ea170e40b318bb29bbc0246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseTime: 15
+  sceneName: SweatWipe
+  timeMultiplier: 1
+  gameManager: {fileID: 0}
+  sweat: {fileID: 288143743}
 --- !u!1 &891849378
 GameObject:
   m_ObjectHideFlags: 0
