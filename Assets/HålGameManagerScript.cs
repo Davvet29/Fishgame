@@ -21,9 +21,6 @@ public class HålGameManagerScript : Minigame
         summonPosition = GameObject.Find("SummonPosition").transform.position;
         InstanceShape(UnityEngine.Random.Range(1, 4));
 
-        pickupScript = GameObject.Find("TipPoint").GetComponent<PickupScript>();
-        pickupScript.MakeHorizontal(true);
-
         timeMultiplier = 1;
     }
 
@@ -34,7 +31,7 @@ public class HålGameManagerScript : Minigame
 
     public void gameOver(bool won)
     {
-        //gameManager.OnGameEnd(won);
+        gameManager.OnGameEnd(won);
     }
 
     public void InstanceShape(int shapeNumber)
