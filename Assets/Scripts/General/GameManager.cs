@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -47,6 +48,11 @@ public class GameManager : MonoBehaviour
                 NextGame();
             }
         }
+
+        if (GameObject.Find("LifeText"))
+        {
+            GameObject.Find("LifeText").GetComponent<TextMeshProUGUI>().text = "X " + lives;
+        }
     }
 
     public void OnGameEnd(bool won)
@@ -57,15 +63,14 @@ public class GameManager : MonoBehaviour
             if (lives <= 0)
             {
                 HandleGameEnd(VoicePlayer.AudioClips.GAMEOVER);
+                return;
             }
-
             HandleGameEnd(VoicePlayer.AudioClips.LOSECLIP);
         }
         else
         {
             HandleGameEnd(VoicePlayer.AudioClips.WINCLIP);
         }
-
         timeMultiplier -= timeMultiplierDelta;
     }
 
