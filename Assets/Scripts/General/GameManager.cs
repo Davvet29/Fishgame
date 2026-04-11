@@ -75,7 +75,6 @@ public class GameManager : MonoBehaviour
         if (clip == VoicePlayer.AudioClips.GAMEOVER)
         {
             player.PlayAudio(clip);
-            GameOver();
             return;
         }
         timeToWait = player.PlayAudio(clip);
