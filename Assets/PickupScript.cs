@@ -21,10 +21,12 @@ public class PickupScript : MonoBehaviour
         {
             Debug.Log("isClicking");
             itemGrabbed = true;
+            OnPickup();
         }
         else
         {
             itemGrabbed = false;
+            OnLetGo();
         }
         if (itemGrabbed)
         {
@@ -39,5 +41,25 @@ public class PickupScript : MonoBehaviour
             Debug.Log("FOUND ITEM!!");
             item = collision.gameObject;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Item")
+        {
+            item = null;
+        }
+    }
+
+    void OnPickup()
+    {
+        item.GetComponent<Rigidbody2D>().gravityScale = 0;
+    }
+
+    void OnLetGo()
+    {
+        item = null;
+        item.GetComponent<Rigidbody2D>().gravityScale = 1;
+
     }
 }

@@ -7,12 +7,12 @@ public class Minigame : MonoBehaviour
     public string sceneName;
     protected bool gameWon;
 
-    private float timeMultiplier;
+    protected float timeMultiplier;
     private float gameTime;
 
     private float timePassed;
 
-    private GameManager gameManager; 
+    protected GameManager gameManager; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,10 +35,20 @@ public class Minigame : MonoBehaviour
         this.gameManager = gameManager;
     }
 
+    protected virtual void CheckCondition()
+    {
+
+    }
+
     void EndGame(bool won)
     {
         SceneManager.UnloadSceneAsync(sceneName);
         gameManager.OnGameEnd(won);
+    }
+
+    protected virtual void OnGameStart()
+    {
+
     }
 
     
