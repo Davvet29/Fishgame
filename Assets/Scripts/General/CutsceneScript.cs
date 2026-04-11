@@ -18,7 +18,7 @@ public class CutsceneScript : MonoBehaviour
         timePassed += Time.deltaTime;
         if (timePassed > cutsceneTime)
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("MainScene1");
         }
     }
 }

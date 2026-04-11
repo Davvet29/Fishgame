@@ -34,8 +34,8 @@ public class Minigame : MonoBehaviour
             timePassed = 0;
         }
 
-        GameObject.Find("Timer").GetComponent<Slider>().maxValue = gameTime;
-        GameObject.Find("Timer").GetComponent<Slider>().value = timePassed;
+        GameObject.Find("Timer").transform.GetChild(0).GetComponent<Slider>().maxValue = gameTime;
+        GameObject.Find("Timer").transform.GetChild(0).GetComponent<Slider>().value = timePassed;
     }
 
     protected virtual void CheckCondition()
