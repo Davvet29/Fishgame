@@ -88,6 +88,7 @@ public class SimonSaysScript : Minigame
         else if (queue.Count == 0)
         {
             Debug.Log("YOU WIN!");
+            timePassed = 100;
             gameWon = true;
         }
     }

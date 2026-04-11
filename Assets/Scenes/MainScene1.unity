@@ -532,12 +532,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6bdd47f4e11bb41a971baf8a1b8e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introClip: {fileID: 8300000, guid: 3384dee84aa64c849ba6baee629c467c, type: 3}
-  gameOverClip: {fileID: 0}
+  introClip: {fileID: 8300000, guid: fac7791e0d10bfb4c8f0f42738e40f0f, type: 3}
+  gameOverClip: {fileID: 8300000, guid: ce352157772a63d4e87dc1050e499983, type: 3}
   winClips:
-  - {fileID: 8300000, guid: 3384dee84aa64c849ba6baee629c467c, type: 3}
+  - {fileID: 8300000, guid: c12b681c022ad0a4cb0769bb05efe715, type: 3}
+  - {fileID: 8300000, guid: a2123692255864d4296c883860955634, type: 3}
+  - {fileID: 8300000, guid: 85c9c6c21f27db343a9bdd06acef89c5, type: 3}
+  - {fileID: 8300000, guid: 2d07f0dd6c4911842b141004bda004d4, type: 3}
+  - {fileID: 8300000, guid: e5734d5b9298aec40b48375b1db71748, type: 3}
   loseClips:
-  - {fileID: 8300000, guid: 3384dee84aa64c849ba6baee629c467c, type: 3}
+  - {fileID: 8300000, guid: c8e3a8f7b4e1ae54dbdd3a02a14bcc83, type: 3}
+  - {fileID: 8300000, guid: c3b35499a9b58f64bb51c1813395f30e, type: 3}
+  - {fileID: 8300000, guid: 7d749cb49b5fb2541bfd78964de5beda, type: 3}
   source: {fileID: 1421675521}
 --- !u!1 &1515415833
 GameObject:
