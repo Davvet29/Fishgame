@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
             if (lives <= 0)
             {
                 HandleGameEnd(VoicePlayer.AudioClips.GAMEOVER);
+                Destroy(GameObject.Find("Music player(Clone)"));
                 return;
             }
             HandleGameEnd(VoicePlayer.AudioClips.LOSECLIP);
