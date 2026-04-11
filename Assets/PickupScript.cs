@@ -20,13 +20,25 @@ public class PickupScript : MonoBehaviour
     [SerializeField]
     Sprite closedGrabHand;
 
+    [SerializeField]
     bool horizontalArm = false;
+    GameObject holdPos;
 
     void Start()
     {
         leftClick = InputSystem.actions.FindAction("Attack");
         sr = GameObject.Find("Hand").GetComponent<SpriteRenderer>();
-        MakeHorizontal(true);
+        holdPos = GameObject.Find("HoldingPosition");
+
+
+        if (horizontalArm)
+        {
+            MakeHorizontal(true);
+        }
+        else
+        {
+            MakeHorizontal(false);
+        }
     }
 
     // Update is called once per frame
@@ -65,7 +77,7 @@ public class PickupScript : MonoBehaviour
                 item.transform.position = transform.position;
                 if (horizontalArm)
                 {
-                    item.transform.position += new Vector3(1, -1, 0);
+                    item.transform.position = holdPos.transform.position;
                 }
             }
         }
