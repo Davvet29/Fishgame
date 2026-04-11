@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         if (clip == VoicePlayer.AudioClips.GAMEOVER)
         {
             player.PlayAudio(clip);
-            //Do gameover logic
+            GameOver();
             return;
         }
         timeToWait = player.PlayAudio(clip);
@@ -100,6 +100,6 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-
+        SceneManager.LoadScene("GameOverScene");
     }
 }
