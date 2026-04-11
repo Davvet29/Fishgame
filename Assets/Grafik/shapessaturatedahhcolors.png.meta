@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7e5e8535da01b8e4b8d6a36956231f96
+guid: 355472cce3f5b1247b13400976552de4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7513075839549712378
-    second: tableview2_0
+      213: -9031321805968401571
+    second: shapessaturatedahhcolors_0
+  - first:
+      213: 2663986135113004322
+    second: shapessaturatedahhcolors_1
+  - first:
+      213: 4339021328663549085
+    second: shapessaturatedahhcolors_2
+  - first:
+      213: 484995983863842513
+    second: shapessaturatedahhcolors_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 106
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tableview2_0
+      name: shapessaturatedahhcolors_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 448
+        width: 308
+        height: 289
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 608d11574513cb790800000000000000
-      internalID: -7513075839549712378
+      spriteID: d5b930fdaac4aa280800000000000000
+      internalID: -9031321805968401571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapessaturatedahhcolors_1
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 481
+        width: 192
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225f9f5864168f420800000000000000
+      internalID: 2663986135113004322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapessaturatedahhcolors_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 35
+        width: 430
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9495d7c8ec473c30800000000000000
+      internalID: 4339021328663549085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapessaturatedahhcolors_3
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 0
+        width: 348
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d602b7174d0bb600800000000000000
+      internalID: 484995983863842513
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tableview2_0: -7513075839549712378
+      shapessaturatedahhcolors_0: -9031321805968401571
+      shapessaturatedahhcolors_1: 2663986135113004322
+      shapessaturatedahhcolors_2: 4339021328663549085
+      shapessaturatedahhcolors_3: 484995983863842513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

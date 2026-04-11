@@ -928,6 +928,7 @@ MonoBehaviour:
   - DrawTheLine
   - "BlockIH\xE5let"
   - Electricity
+  - SimonSays
   minigameScripts: []
   player: {fileID: 1421675523}
   timeMultiplier: 2
