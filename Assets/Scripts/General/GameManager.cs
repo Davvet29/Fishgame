@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         if (!won)
         {
             lives--;
-            if (lives == 0)
+            if (lives <= 0)
             {
                 HandleGameEnd(VoicePlayer.AudioClips.GAMEOVER);
                 return;
@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
     {
         if (clip == VoicePlayer.AudioClips.GAMEOVER)
         {
-            player.PlayAudio(clip);
             gameOver = true;
         }
         timeToWait = player.PlayAudio(clip);
