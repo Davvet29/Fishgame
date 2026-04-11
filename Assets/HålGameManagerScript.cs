@@ -40,7 +40,4 @@ public class HålGameManagerScript : Minigame
             
         }
     }
-
-    public HålGameManagerScript(float timeMultiplier, GameManager gameManager)
-        : base(timeMultiplier, gameManager) { }
 }
