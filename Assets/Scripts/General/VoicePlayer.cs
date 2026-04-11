@@ -48,7 +48,7 @@ public class VoicePlayer : MonoBehaviour
         }
         else if (clip == AudioClips.LOSECLIP)
         {
-            source.clip = winClips[Random.Range(0, loseClips.Count)];
+            source.clip = loseClips[Random.Range(0, loseClips.Count)];
         }
 
         source.Play();
