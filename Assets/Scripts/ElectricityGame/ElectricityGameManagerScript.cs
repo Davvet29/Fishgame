@@ -6,12 +6,16 @@ public class ElectricityGameManagerScript : Minigame
     PickupScript pickupScript;
 
     [SerializeField]
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         timeMultiplier = 1;
     }
 
-    void Update() { }
+    protected override void Update() 
+    {
+        base.Update();
+    }
 
     public void gameOver(bool won)
     {
