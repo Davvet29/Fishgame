@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51baa20baadb6bd4c9bcdd27f60f2679
+guid: a72c4a216c4ab234fb50939a3b46a170
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -115,12 +115,12 @@ TextureImporter:
       name: armsprites_0
       rect:
         serializedVersion: 2
-        x: 58
+        x: 59
         y: 0
-        width: 966
-        height: 2340
+        width: 1016
+        height: 2338
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -142,7 +142,7 @@ TextureImporter:
         width: 354
         height: 421
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -164,7 +164,7 @@ TextureImporter:
         width: 369
         height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -186,7 +186,7 @@ TextureImporter:
         width: 216
         height: 548
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,11 +199,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: armsprites_4
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 535
+        width: 341
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd65afbe5ff4f3b0800000000000000
+      internalID: -5479474064195752503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8476b852e8224b43a3750bdc05097b1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -218,7 +240,6 @@ TextureImporter:
       armsprites_2: 5532785136040500249
       armsprites_3: -4479850291067820352
       armsprites_4: -5479474064195752503
-      armsprites_5: -298286459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
