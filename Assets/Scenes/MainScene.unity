@@ -892,6 +892,7 @@ MonoBehaviour:
   lives: 3
   minigames:
   - DrawTheLines
+  - "BlockIH\xE5let"
   minigameScripts: []
   player: {fileID: 1421675523}
   timeMultiplier: 2

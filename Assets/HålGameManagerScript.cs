@@ -16,22 +16,23 @@ public class HålGameManagerScript : Minigame
 
     Vector3 summonPosition;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         summonPosition = GameObject.Find("SummonPosition").transform.position;
         InstanceShape(UnityEngine.Random.Range(1, 4));
 
         timeMultiplier = 1;
     }
 
-    void Update()
+    protected override void Update()
     {
-        baseTime = 5766876;
+        base.Update();
     }
 
     public void gameOver(bool won)
     {
-        gameManager.OnGameEnd(won);
+        gameWon = won;
     }
 
     public void InstanceShape(int shapeNumber)

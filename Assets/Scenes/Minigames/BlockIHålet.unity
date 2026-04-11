@@ -611,8 +611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a9139478efc36d48a59b17914d48cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTime: 0
-  sceneName: 
+  baseTime: 15
+  sceneName: "BlockIH\xE5let"
   timeMultiplier: 1
   gameManager: {fileID: 0}
   square: {fileID: 3019358316345398886, guid: c70f220b4e488244aa11ffe2a32759f9, type: 3}

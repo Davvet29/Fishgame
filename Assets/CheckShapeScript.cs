@@ -9,7 +9,7 @@ public class CheckShapeScript : MonoBehaviour
 
     void Start()
     {
-        HGMS = GameObject.Find("HålGameManager").GetComponent<HålGameManagerScript>();
+        HGMS = GameObject.Find("BlockIHålet").GetComponent<HålGameManagerScript>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
