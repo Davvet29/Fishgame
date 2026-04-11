@@ -452,6 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalHand: {fileID: 5532785136040500249, guid: a72c4a216c4ab234fb50939a3b46a170, type: 3}
+  closedNormalHand: {fileID: 0}
   openGrabHand: {fileID: -4479850291067820352, guid: a72c4a216c4ab234fb50939a3b46a170, type: 3}
   closedGrabHand: {fileID: 8889331371150820397, guid: a72c4a216c4ab234fb50939a3b46a170, type: 3}
   horizontalArm: 1
@@ -608,7 +609,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 886430861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a9139478efc36d48a59b17914d48cce, type: 3}
+  m_Script: {fileID: 11500000, guid: 883bdf8b9b52dc349b98787cb91d8469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   baseTime: 15

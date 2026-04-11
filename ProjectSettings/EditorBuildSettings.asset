@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Minigames/BlockIH\xE5let.unity"
     guid: cd82377de58879641be1c4d21354ca74
+  - enabled: 1
+    path: Assets/Scenes/Intro Scene.unity
+    guid: ce23b846f4044d74f86758f911b95e2e
+  - enabled: 1
+    path: Assets/Scenes/Mainmenu.unity
+    guid: 00ab01e02fc15984489cc9ec407bb24d
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: d39aa5e16a4b6294b8d579048d3af974
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
