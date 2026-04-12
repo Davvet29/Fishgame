@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
+using UnityEngine.UI;
 
 public class DrawLetters : Minigame
 {
@@ -21,6 +22,9 @@ public class DrawLetters : Minigame
     {
         CheckCondition();
         base.Update();
+
+        GameObject.Find("DrawMeter").GetComponent<Slider>().maxValue = winPercent;
+
     }
 
     protected override void CheckCondition()
@@ -54,6 +58,9 @@ public class DrawLetters : Minigame
         }
 
         Debug.Log("Confirmed points: " + confirmedPoints);
+
+        GameObject.Find("DrawMeter").GetComponent<Slider>().value = confirmedPoints;
+
 
         if (confirmedPoints >= winPercent)
         {
