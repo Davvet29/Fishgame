@@ -978,9 +978,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e191e739534269c4d8fa585488925106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTime: 30
+  baseTime: 15
   sceneName: 
   timeMultiplier: 1
+  timePassed: 0
   gameManager: {fileID: 0}
   CircularBox: {fileID: 584155982}
   TriangleBox: {fileID: 384819456}
