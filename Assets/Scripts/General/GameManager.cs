@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     float timeToWait;
 
-    float timeMultiplierDelta = 0.025f;
+    float timeMultiplierDelta = 0.05f;
 
     bool gameOver;
 
