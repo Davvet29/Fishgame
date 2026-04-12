@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: 445}
+  m_AnchoredPosition: {x: 0, y: 478}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217330528
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Point at the right shape
+  m_text: Point at the right shape!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c5fcece1db28cf46a5d5f36610ff423, type: 2}
   m_sharedMaterial: {fileID: -7933545204853851951, guid: 9c5fcece1db28cf46a5d5f36610ff423, type: 2}
@@ -1390,6 +1390,10 @@ PrefabInstance:
       propertyPath: horizontalArm
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 240414360932336077, guid: 8948fee301b8eb84b9565e76e3b5caae, type: 3}
+      propertyPath: closedNormalHand
+      value: 
+      objectReference: {fileID: -5479474064195752503, guid: a72c4a216c4ab234fb50939a3b46a170, type: 3}
     - target: {fileID: 421119598043786292, guid: 8948fee301b8eb84b9565e76e3b5caae, type: 3}
       propertyPath: m_TagString
       value: Player
