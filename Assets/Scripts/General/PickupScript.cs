@@ -27,6 +27,8 @@ public class PickupScript : MonoBehaviour
     bool horizontalArm = false;
     GameObject holdPos;
 
+    public Sprite penSprite;
+
     void Start()
     {
         leftClick = InputSystem.actions.FindAction("Attack");
@@ -115,6 +117,11 @@ public class PickupScript : MonoBehaviour
         if (item.TryGetComponent(out Rigidbody2D rb))
         {
             rb.gravityScale = 0;
+
+            if (item.name == "Pen")
+            {
+
+            }
         }
     }
 
